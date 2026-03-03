@@ -5,3 +5,4 @@ Conclusiones:
 3. WebDriverManager simplifica la gestión de drivers.
 4. El proyecto es escalable para integrar más escenarios.
 5. Se puede integrar fácilmente a CI/CD.
+6. En el ultimo escenario se agrega un caso de fallo cuando el mensaje de respuesta no corresponde con el esperado
