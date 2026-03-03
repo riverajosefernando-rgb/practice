@@ -1,9 +1,9 @@
 package com.opencart.questions;
 
-import com.opencart.ui.CheckoutPage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.questions.Text;
+import com.opencart.ui.CheckoutPage;
 
 public class OrderConfirmationMessage implements Question<String> {
 
