@@ -1,0 +1,43 @@
+plugins {
+    id 'java'
+    id 'net.serenity-bdd.serenity-gradle-plugin' version '3.9.8'
+}
+
+group 'com.opencart'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 11
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    serenityVersion = '3.9.8'
+}
+
+dependencies {
+
+    // Serenity
+    implementation "net.serenity-bdd:serenity-core:$serenityVersion"
+    implementation "net.serenity-bdd:serenity-screenplay:$serenityVersion"
+    implementation "net.serenity-bdd:serenity-screenplay-webdriver:$serenityVersion"
+    implementation "net.serenity-bdd:serenity-junit:$serenityVersion"
+
+    //Bonigarcia
+    implementation 'io.github.bonigarcia:webdrivermanager:5.8.0'
+
+    // Lombok
+    implementation 'org.projectlombok:lombok:1.18.30'
+    annotationProcessor 'org.projectlombok:lombok:1.18.30'
+
+    //Cucumber
+    implementation "net.serenity-bdd:serenity-cucumber:$serenityVersion"
+
+    // Junit
+    testImplementation 'junit:junit:4.13.2'
+}
+
+test {
+    useJUnit()
+}
