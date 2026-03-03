@@ -1,6 +1,6 @@
 # Default ignored files
 /shelf/
-/workspace.xml
+/.idea/workspace.xml
 # Ignored default folder with query files
 /queries/
 # Datasource local storage ignored files
@@ -23,3 +23,4 @@ build/
 # OS
 .DS_Store
 Thumbs.db
+
