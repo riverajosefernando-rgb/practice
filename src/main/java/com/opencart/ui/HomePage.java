@@ -26,20 +26,4 @@ public class HomePage {
                     .locatedBy("//h4/a[text()='{0}']/../../..//button[contains(@onclick,'cart.add')]");
 
 
-    public static final Target CHECKOUT_BUTTON =
-            Target.the("Checkout button")
-                    .located(By.linkText("Checkout"));
-
-    public static final Target GUEST_CHECKOUT =
-            Target.the("Guest checkout option")
-                    .located(By.cssSelector("input[value='guest']"));
-
-    public static final Target CONTINUE_ACCOUNT =
-            Target.the("Continue account button")
-                    .located(By.id("button-account"));
-
-    public static final Target CONFIRMATION_MESSAGE =
-            Target.the("Order confirmation message")
-                    .located(By.xpath("//h1[contains(text(),'Your order has been placed!')]"));
-
 }
