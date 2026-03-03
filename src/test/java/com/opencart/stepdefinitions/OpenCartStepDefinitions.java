@@ -8,7 +8,6 @@ import com.opencart.questions.OrderConfirmationMessage;
 import com.opencart.tasks.AddProductByName;
 import com.opencart.tasks.AddProductByPosition;
 import com.opencart.tasks.CompleteGuestCheckout;
-import com.opencart.tasks.ProceedToCheckout;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
