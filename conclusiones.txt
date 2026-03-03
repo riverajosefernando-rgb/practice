@@ -1,8 +1,37 @@
-Conclusiones:
+CONCLUSIONES DEL PROYECTO
 
-1. Screenplay permite alta mantenibilidad y separación de responsabilidades.
-2. Serenity genera reportes ejecutivos automáticamente.
-3. WebDriverManager simplifica la gestión de drivers.
-4. El proyecto es escalable para integrar más escenarios.
-5. Se puede integrar fácilmente a CI/CD.
-6. En el ultimo escenario se agrega un caso de fallo cuando el mensaje de respuesta no corresponde con el esperado
+1. Separación por módulos
+
+Dividi la automatización en UI (Serenity + Gradle) y API (Karate + Maven) permitiendo trabajar cada tipo de prueba de manera independiente, con sus propias dependencias y forma de ejecución. Esto facilita mantenimiento y escalabilidad.
+
+2. Automatización UI con Screenplay
+
+El uso del patrón Screenplay ayuda a mantener el código organizado y legible. Separar Tasks, Questions y Page Objects hace que el flujo sea más claro y reutilizable. Además, centralizar locators y datos mejora la estabilidad del framework.
+En el ultimo escenario se agrega un caso de fallo cuando el mensaje de respuesta no corresponde con el esperado
+
+3. Automatización API con Karate
+
+Karate simplifica mucho la automatización de servicios REST. No requiere step definitions en Java y permite validar respuestas JSON de forma directa. Externalizar la URL, los endpoints y los payloads hace que el mantenimiento sea más sencillo.
+
+4. Configuración y herramientas
+
+Se configuró correctamente:
+- Java 11
+- Gradle para UI
+- Maven para API
+- Manejo adecuado de dependencias
+- Reportes automáticos para ambos módulos
+
+5. Buenas prácticas aplicadas
+
+- Eliminación de datos hardcodeados
+- Centralización de configuraciones
+- Externalización de JSON
+- Organización limpia del repositorio
+- Uso adecuado de .gitignore
+
+6. Aprendizaje principal
+
+El proyecto permitió reforzar la importancia de la arquitectura en automatización, no solo que las pruebas funcionen, sino que el framework sea mantenible, claro y escalable.
+
+Proyecto realizado como práctica técnica para fortalecer conocimientos en automatización UI y API.
